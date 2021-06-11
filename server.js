@@ -1,6 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+require("dotenv").config()
 
 
 const PORT = process.env.PORT || 3000
@@ -13,7 +14,7 @@ app.use(morgan("dev"));
 
 app.use(express.static(__dirname + "/public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useCreateIndex: true,
