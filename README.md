@@ -6,7 +6,7 @@
 
 ## Installation
 
-if git cloning use ```npm i``` then use ```npm start```. 
+if git cloning use ```npm i```, ```npm run seed``` then use ```npm start```. 
 
 ## Preview
 ![desktop preview](assets/screenshot1.png)
